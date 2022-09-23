@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-boxs;
+}
+.container{
+    width: 1000px;
+    height: 800px;
+    border:solid 1px;
+    display: grid;
+    grid-template-areas: "top top"
+                            "left right";
+    margin: auto;
+    
+}
+h1{
+    text-align: center;
+    grid-area: top;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.container_left{
+    display: flex;
+    flex-direction: column;
+    grid-area: left;
+}
+#farenheit{
+    width: 80px;
+    height: 80px;
+}
+#imc{
+    width: 300px;
+    height: 120px;
+    border: solid 1px;
+    text-align: center;
+    padding-top: 1.5rem;
+
+}
+.container_right{
+    grid-area: right;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+#calc{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    background-color: dodgerblue;
+    border-radius: 5px  ;
+    border: none;
+}
+#reset{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    background-color: dodgerblue;
+    border-radius: 5px  ;
+    border: none;
+}
